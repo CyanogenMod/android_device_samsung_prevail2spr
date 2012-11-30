@@ -36,9 +36,9 @@
 /efs            ext4            /dev/block/mmcblk0p20
 /recovery       emmc            /dev/block/mmcblk0p19
 # These ones arent needed but its nice to know what partitions they are :)
-/modem        	emmc	        	/dev/block/mmcblk0p6
-/carrier	      ext4	        	/dev/block/mmcblk0p20
-/preload      	ext4	        	/dev/block/mmcblk0p21
-/modem_bkp	    emmc	        	/dev/block/mmcblk0p22
+/modem          emmc            /dev/block/mmcblk0p6
+/carrier        ext4            /dev/block/mmcblk0p20
+/preload        ext4            /dev/block/mmcblk0p21
+/modem_bkp      emmc            /dev/block/mmcblk0p22
 
 
