@@ -3,11 +3,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/m830/m830-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/prevail2spr/prevail2spr-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/m830/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/prevail2spr/overlay
 
-LOCAL_PATH := device/samsung/m830
+LOCAL_PATH := device/samsung/prevail2spr
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 else
@@ -20,5 +20,5 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_m830
-PRODUCT_DEVICE := m830
+PRODUCT_NAME := full_prevail2spr
+PRODUCT_DEVICE := prevail2spr
