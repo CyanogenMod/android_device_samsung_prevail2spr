@@ -26,6 +26,7 @@ TARGET_PREBUILT_KERNEL := device/samsung/prevail2spr/kernel
 BOARD_HAS_NO_SELECT_BUTTON := true
 # Use this flag if the board has a ext4 partition larger than 2gb
 #BOARD_HAS_LARGE_FILESYSTEM := true
+BOARD_UMS_LUNFILE := "/sys/devices/platform/msm_hsusb/gadget/lun0/file"
 
 BOARD_CUSTOM_GRAPHICS  := ../../../device/samsung/prevail2spr/recovery/graphics.c
 
